@@ -1,0 +1,34 @@
+.container {
+  display: grid;
+  background-color: #eee;
+  width: 1000px;
+  margin: 0 auto;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: 50% 1fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+} 
+.item {
+  padding: 20px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+}
+.item--1 {
+  background-color: orangered;
+}
+.item--2 {
+  background-color: yellowgreen;
+}
+.item--3 {
+  background-color: blueviolet;
+}
+.item--4 {
+  background-color: palevioletred;
+}
+.item--5 {
+  background-color: royalblue;
+}
+.item--6 {
+  background-color: goldenrod;
+}/*# sourceMappingURL=grid.css.map */

@@ -1,0 +1,36 @@
+/*
+Explicit grid - The part which we actually define in our code / grid is known as explicit grid.
+
+Implicit grid - The part that is added to fit the content that is not fitted in the explicit grid is known as implicit grid
+
+Solid line is basically the end of the explicit grid 
+
+*/
+.container {
+  display: grid;
+  width: 1000px;
+  margin: 30px auto;
+  background-color: #ddd;
+  grid-template-rows: repeat(1, 150px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  grid-auto-rows: 80px;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.container .item {
+  padding: 20px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+  background-color: orangered;
+}
+.container .item--4 {
+  background-color: crimson;
+  grid-row: 2/span 3;
+}
+.container .item--7 {
+  background-color: pink;
+  grid-column: 1/-1;
+}/*# sourceMappingURL=grid.css.map */

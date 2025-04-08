@@ -1,0 +1,37 @@
+.challenge {
+  display: grid;
+  width: 1000px;
+  grid-gap: 30px;
+  margin: 30px auto;
+  grid-template-rows: 100px 200px 400px 100px;
+  grid-template-columns: repeat(3, 1fr) 200px;
+  grid-template-areas: "head head head head" "box-1 box-2 box-3 side" "main main main side" "foot foot foot foot";
+}
+.challenge > * {
+  background-color: orangered;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.challenge .header {
+  grid-area: head;
+}
+.challenge .small-box-1 {
+  grid-area: box-1;
+}
+.challenge .small-box-2 {
+  grid-area: box-2;
+}
+.challenge .small-box-3 {
+  grid-area: box-3;
+}
+.challenge .sidebar {
+  grid-area: side;
+}
+.challenge .main-content {
+  grid-area: main;
+}
+.challenge .footer {
+  grid-area: foot;
+}/*# sourceMappingURL=grid.css.map */
